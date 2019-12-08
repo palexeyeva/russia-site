@@ -6,15 +6,18 @@
   color: #fff;
   position: relative;
   overflow: hidden;
+  font-style: normal;
+  font-weight: normal;
 }
 .section {
   width: 100%;
+  padding: 0 16px;
 }
 .header {
   margin-bottom: 48px;
 }
 .header__section {
-  padding: 16px 16px 0;
+  padding-top: 16px;
   position: relative;
   display: flex;
   flex-direction: row;
@@ -23,11 +26,9 @@
 .header__lang-block {
   display: flex;
   flex-direction: row;
-  font-style: normal;
-  font-weight: normal;
   margin-top: 16px;
   font-size: 18px;
-  line-height: 17px;
+  line-height: 1.1;
 }
 .header__lang {
   color: #fff;
@@ -45,16 +46,13 @@
   align-items: center;
 }
 .lead__title {
-  font-style: normal;
   text-align: center;
   font-weight: 900;
   font-size: 40px;
   line-height: 1.1;
-  margin-bottom: 14sepx;
+  margin-bottom: 14px;
 }
 .lead__subtitle {
-  font-style: normal;
-  font-weight: normal;
   text-align: center;
   font-size: 16px;
   line-height: 1.5;
@@ -64,22 +62,15 @@
   max-width: 100%;
 }
 .lead__image {
-  margin-bottom: 8px;
   width: 100%;
-  height: 66vw;
-}
-.lead__image {
-  background: url(__image.svg);
   position: relative;
-}
-.lead__caption {
-  font-style: normal;
-  font-weight: normal;
-  text-transform: uppercase;
-  align-self: flex-start;
-  padding-left: 16px;
-  font-size: 10px;
-  line-height: 12px;
-  letter-spacing: 0.15em;
+  margin: 8px -16px 0;
 }
 
+.lead__caption {
+  text-transform: uppercase;
+  align-self: flex-start;
+  font-size: 10px;
+  line-height: 1.1;
+  letter-spacing: 0.15em;
+}

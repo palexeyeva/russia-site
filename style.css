@@ -34,43 +34,57 @@
   color: #fff;
   text-decoration: none;
 }
-.header__lang-block .header__lang-block_active {
+.header__lang {
   padding-right: 16px;
+}
+.header__lang:last-child{
+  padding-right: 0;
+}
+.header__lang_active {
   text-decoration: underline;
 }
 
-
+.section-title {
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 1.1;
+}
+.section-subtitle {
+  font-size: 16px;
+  line-height: 1.5;
+}
 .lead__section {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.lead__title {
+.lead__main-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section-title--lead {
   text-align: center;
-  font-weight: 900;
-  font-size: 40px;
-  line-height: 1.1;
   margin-bottom: 14px;
 }
-.lead__subtitle {
+.section-subtitle--lead {
   text-align: center;
-  font-size: 16px;
-  line-height: 1.5;
   margin-bottom: 32px;
+  width: 80%;
 }
 .image-container img {
   max-width: 100%;
 }
 .lead__image {
-  width: 100%;
+  width: 110%;
   position: relative;
-  margin: 8px -16px 0;
+  margin-bottom: 8px;
 }
 
 .lead__caption {
   text-transform: uppercase;
   align-self: flex-start;
   font-size: 10px;
-  line-height: 1.1;
+  line-height: 12px;
   letter-spacing: 0.15em;
 }

@@ -6,15 +6,19 @@
   color: #fff;
   position: relative;
   overflow: hidden;
+  font-style: normal;
+  font-weight: normal;
 }
 .section {
   width: 100%;
+  padding: 0 16px;
+  text-align: center;
 }
 .header {
   margin-bottom: 48px;
 }
 .header__section {
-  padding: 16px 16px 0;
+  padding-top: 16px;
   position: relative;
   display: flex;
   flex-direction: row;
@@ -23,63 +27,61 @@
 .header__lang-block {
   display: flex;
   flex-direction: row;
-  font-style: normal;
-  font-weight: normal;
   margin-top: 16px;
   font-size: 18px;
-  line-height: 17px;
+  line-height: 1.1;
 }
 .header__lang {
   color: #fff;
   text-decoration: none;
 }
-.header__lang-block .header__lang-block_active {
+.header__lang {
   padding-right: 16px;
+}
+.header__lang:last-child{
+  padding-right: 0;
+}
+.header__lang_active {
   text-decoration: underline;
 }
 
-
+.section-title {
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 1.1;
+}
+.section-subtitle {
+  font-size: 16px;
+  line-height: 1.5;
+}
 .lead__section {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.lead__title {
-  font-style: normal;
-  text-align: center;
-  font-weight: 900;
-  font-size: 40px;
-  line-height: 1.1;
+.lead__main-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.lead__section-title {
   margin-bottom: 14px;
 }
-.lead__subtitle {
-  font-style: normal;
-  font-weight: normal;
-  text-align: center;
-  font-size: 16px;
-  line-height: 1.5;
+.lead__section-subtitle {
   margin-bottom: 32px;
+  width: 80%;
 }
 .image-container img {
   max-width: 100%;
 }
 .lead__image {
-  margin-bottom: 8px;
-  width: 100%;
-  height: 66vw;
+  margin: 0 -16px 8px;
 }
-.lead__image {
-  background: url(__image.svg);
-  position: relative;
-}
+
 .lead__caption {
-  font-style: normal;
-  font-weight: normal;
   text-transform: uppercase;
   align-self: flex-start;
-  padding-left: 16px;
   font-size: 10px;
   line-height: 12px;
   letter-spacing: 0.15em;
 }
-
